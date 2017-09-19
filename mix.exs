@@ -9,7 +9,7 @@ defmodule AlchemetricsWeb.Mixfile do
   def project do
     [
       app: :alchemetrics_web,
-      version: "0.1.0",
+      version: "0.1.2",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       description: @description,
@@ -28,6 +28,7 @@ defmodule AlchemetricsWeb.Mixfile do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
+      applications: [:alchemetrics],
       extra_applications: [:logger]
     ]
   end
