@@ -1,6 +1,21 @@
-# AlchemetricsWeb
+<h1 align="center">Alchemetrics Web</h1>
 
-**TODO: Add description**
+<p align="center">
+  <img alt="Alchemetrics Web" src="https://github.com/globocom/alchemetrics_web/blob/master/assets/alchemetrics_web.png?raw=true" width="128">
+</p>
+
+<p align="center">
+  Metrics for phoenix and ecto.
+</p>
+
+<p align="center">
+  <a href="https://travis-ci.org/globocom/alchemetrics_web">
+    <img alt="Travis" src="https://travis-ci.org/globocom/alchemetrics_web.svg">
+  </a>
+  <a href="https://hex.pm/packages/alchemetrics_web">
+    <img alt="Hex" src="https://img.shields.io/hexpm/dt/alchemetrics_web.svg">
+  </a>
+</p>
 
 ## Installation
 
