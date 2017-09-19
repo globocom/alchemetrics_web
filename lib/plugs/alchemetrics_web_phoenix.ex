@@ -26,6 +26,6 @@ defmodule AlchemetricsWeb.Plugs.Phoenix do
 
   defp report(metadata, response_time_fn) do
     metric_name = Enum.map(metadata, fn {_k, v} -> v end) |> Enum.join("_")
-    Alchemetrics.report metric_name, response_time_fn.(), metadata
+    Alchemetrics.report metric_name, response_time_fn.(), %{metadata: metadata}
   end
 end
