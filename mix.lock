@@ -1,4 +1,4 @@
-%{"alchemetrics": {:hex, :alchemetrics, "0.3.0", "52b447e632c2d10aef25f1a9df15792f3396442241a69af407741efa1c08eb3b", [:mix], [{:exometer_core, "~> 1.0", [hex: :basho_exometer_core, repo: "hexpm", optional: false]}, {:gen_stage, "~> 0.11", [hex: :gen_stage, repo: "hexpm", optional: false]}], "hexpm"},
+%{"alchemetrics": {:hex, :alchemetrics, "0.4.0", "c564b1d6bcb5a8ab575c44f9c8cb29241a060a376359d360ac0ed806126ab918", [:mix], [{:exometer_core, "~> 1.0", [hex: :basho_exometer_core, repo: "hexpm", optional: false]}, {:gen_stage, "~> 0.11", [hex: :gen_stage, repo: "hexpm", optional: false]}], "hexpm"},
   "bear": {:hex, :bear, "0.8.5", "e95fca1627cd9e15baf93ce0a52aff16917baf325f0ee65b88cd715376cd2344", [:rebar3], [], "hexpm"},
   "earmark": {:hex, :earmark, "1.2.3", "206eb2e2ac1a794aa5256f3982de7a76bf4579ff91cb28d0e17ea2c9491e46a4", [:mix], [], "hexpm"},
   "edown": {:hex, :edown, "0.8.1", "7333b6f6b7bbc736c263e9ceb8261667d7c8f7d92e251829f1a9fe8f24e7b694", [:rebar3], [], "hexpm"},

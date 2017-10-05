@@ -1,7 +1,6 @@
 defmodule AlchemetricsWeb.Mixfile do
   use Mix.Project
 
-
   @description """
   Alchemetrics Web is a boilerplate to report basic metrics for a typical web application, such as request count, response time, ecto and erlang metrics. 
   """
@@ -9,7 +8,7 @@ defmodule AlchemetricsWeb.Mixfile do
   def project do
     [
       app: :alchemetrics_web,
-      version: "0.1.3",
+      version: "0.2.1",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       description: @description,
@@ -37,7 +36,7 @@ defmodule AlchemetricsWeb.Mixfile do
   defp deps do
     [
       {:phoenix, "~> 1.3.0"},
-      {:alchemetrics, "~> 0.3"},
+      {:alchemetrics, "~> 0.4"},
       {:ex_doc, ">= 0.0.0", only: :dev}
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
     ]

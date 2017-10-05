@@ -1,7 +1,7 @@
-defmodule AlchemetricsWeb.MetadataBuilders.Request do
+defmodule AlchemetricsWeb.MetricMetadata.Request do
   import Phoenix.Controller
   
-  def build(conn), do: [
+  def metadata(conn), do: [
     type: "controller",
     controller: format_controller_name(conn),
     action: action_name(conn)

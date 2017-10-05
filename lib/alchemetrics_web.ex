@@ -15,4 +15,10 @@ defmodule AlchemetricsWeb do
   def hello do
     :world
   end
+
+  defmacro __using__(_) do
+    quote do
+      plug AlchemetricsWeb.PhoenixPlug
+    end
+  end
 end
