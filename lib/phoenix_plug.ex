@@ -11,10 +11,11 @@ defmodule AlchemetricsWeb.PhoenixPlug do
     request_started_at = System.monotonic_time
     
     register_before_send conn, fn conn ->
-      Request.metadata(conn) 
+      conn
+      |> Request.metadata 
       |> report_request_metrics(request_started_at)
-    end
 
-    conn
+      conn
+    end
   end
 end
