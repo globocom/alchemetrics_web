@@ -53,8 +53,27 @@ defmodule MyApp.Endpoint do
 end
 ```
 
+```bash
+%{datapoint: :last_interval, request_count: %{action: :index, controller: "page_controller", type: "controller"}, value: 1}
+%{datapoint: :total,         request_count: %{action: :index, controller: "page_controller", type: "controller"}, value: 1}
+
+%{datapoint: :avg, request_time: %{action: :index, controller: "page_controller", type: "controller"}, value: 192090}
+%{datapoint: :max, request_time: %{action: :index, controller: "page_controller", type: "controller"}, value: 192090}
+%{datapoint: :min, request_time: %{action: :index, controller: "page_controller", type: "controller"}, value: 192090}
+%{datapoint: :p95, request_time: %{action: :index, controller: "page_controller", type: "controller"}, value: 192090}
+%{datapoint: :p99, request_time: %{action: :index, controller: "page_controller", type: "controller"}, value: 192090}
+%{datapoint: :total, request_time: %{action: :index, controller: "page_controller", type: "controller"}, value: 192090}
+%{datapoint: :last_interval, request_time: %{action: :index, controller: "page_controller",type: "controller"}, value: 192090}
+```
+
 3) To collect and report ecto query metrics, config ecto logger in config.exs:
 ```elixir 
 config :my_app, MyApp.Repo, ..., 
   loggers: [..., {AlchemetricsWeb.Collectors.Ecto, :collect, []}]
+```
+
+Ecto collector will report the follow data:
+```bash
+%{datapoint: :total, options: [], query_count: %{type: "database.ecto"}, value: 1}
+%{datapoint: :total, name: "queue_time", options: [], type: "database.ecto", value: 46}
 ```
