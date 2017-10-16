@@ -2,7 +2,7 @@ defmodule AlchemetricsWeb.PhoenixPlug do
   @behaviour Plug
   alias AlchemetricsWeb.MetricMetadata.Request
   
-  import AlchemetricsWeb.MetricCollectors.PhoenixRequest
+  alias AlchemetricsWeb.Collectors.PhoenixRequest
   import Plug.Conn
 
   def init(opts), do: opts
@@ -13,7 +13,7 @@ defmodule AlchemetricsWeb.PhoenixPlug do
     register_before_send conn, fn conn ->
       conn
       |> Request.metadata 
-      |> report_request_metrics(request_started_at)
+      |> PhoenixRequest.collect(request_started_at)
 
       conn
     end

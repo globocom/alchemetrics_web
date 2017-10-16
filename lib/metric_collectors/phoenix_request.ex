@@ -1,6 +1,6 @@
-defmodule AlchemetricsWeb.MetricCollectors.PhoenixRequest do
+defmodule AlchemetricsWeb.Collectors.PhoenixRequest do
   
-  def report_request_metrics(metadata, request_started_at) do
+  def collect(metadata, request_started_at) do
     report metadata, fn -> 
       request_duration(request_started_at) 
     end

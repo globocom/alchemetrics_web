@@ -8,7 +8,7 @@ defmodule AlchemetricsWeb.Mixfile do
   def project do
     [
       app: :alchemetrics_web,
-      version: "0.2.1",
+      version: "0.3.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       description: @description,
