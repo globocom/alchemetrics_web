@@ -1,6 +1,6 @@
 defmodule AlchemetricsWeb.Test.MetadataBuilders.Request do
   use ExUnit.Case
-  alias AlchemetricsWeb.MetadataBuilders.Request
+  alias AlchemetricsWeb.MetricMetadata.Request
 
   test "It builds request metric metadata based on controller and action names" do
     fake_conn = %Plug.Conn{
@@ -10,7 +10,7 @@ defmodule AlchemetricsWeb.Test.MetadataBuilders.Request do
       }
     }
 
-    [{_, type}, {_, controller}, {_, action}] = Request.build(fake_conn)    
+    [{_, type}, {_, controller}, {_, action}] = Request.metadata(fake_conn)    
     
     assert type == "controller"
     assert controller == "fake_controller"
