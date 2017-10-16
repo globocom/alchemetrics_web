@@ -36,8 +36,8 @@ be found at [https://hexdocs.pm/alchemetrics_web](https://hexdocs.pm/alchemetric
 
 ## Usage
 
-1) Add alchemetris_web to your application list in mix.exs file:
-```elixir
+1) Add alchemetris_web to your application list in mix.exs file: 
+```elixir 
 def application do
   ...
   applications: [:phoenix, ..., :alchemetrics_web]
@@ -45,8 +45,8 @@ def application do
 end
 ```
 
-2) Plug AlchemetricsWeb to your endpoint:
-```elixir
+2) Plug AlchemetricsWeb to your endpoint: 
+```elixir 
 defmodule MyApp.Endpoint do
   use Phoenix.Endpoint, otp_app: ...
   use AlchemetricsWeb
@@ -54,8 +54,7 @@ end
 ```
 
 3) To collect and report ecto query metrics, config ecto logger in config.exs:
-
-```elixir
+```elixir 
 config :my_app, MyApp.Repo, ..., 
   loggers: [..., {AlchemetricsWeb.Collectors.Ecto, :collect, []}]
 ```
