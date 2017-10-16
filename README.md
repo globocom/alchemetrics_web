@@ -49,7 +49,7 @@ end
 ```elixir
 defmodule MyApp.Endpoint do
   use Phoenix.Endpoint, otp_app: ...
-  **use AlchemetricsWeb**
+  use AlchemetricsWeb
 end
 ```
 
