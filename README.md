@@ -25,7 +25,7 @@ by adding `alchemetrics_web` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:alchemetrics_web, "~> 0.3.0"}
+    {:alchemetrics_web, "~> 0.4.0"}
   ]
 end
 ```
