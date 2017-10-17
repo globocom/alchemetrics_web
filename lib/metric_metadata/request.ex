@@ -1,15 +1,19 @@
 defmodule AlchemetricsWeb.MetricMetadata.Request do
-  import Phoenix.Controller
+  def metadata(conn) do 
+    {controller, action} = split_route(conn) 
+    [
+      type: "controller", 
+      controller: format(controller), 
+      action: action
+    ]
+  end
   
-  def metadata(conn), do: [
-    type: "controller",
-    controller: format_controller_name(conn),
-    action: action_name(conn)
-  ]
-  
-  defp format_controller_name(conn) do
+  defp split_route(conn) do
+    {conn.private[:phoenix_controller], conn.private[:phoenix_action]}
+  end
+
+  defp format(conn) do
     conn
-    |> controller_module
     |> Macro.underscore
     |> String.split("/")
     |> List.last
