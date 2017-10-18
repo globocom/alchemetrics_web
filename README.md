@@ -77,3 +77,27 @@ Ecto collector will report the follow data:
 %{datapoint: :total, options: [], query_count: %{type: "database.ecto"}, value: 1}
 %{datapoint: :total, name: "queue_time", options: [], type: "database.ecto", value: 46}
 ```
+####Custom reporter
+Alchemetrics automatically schedule collected request and query metrics, but its 
+possible to customize the way how the metrics is reported. In order to do that
+you must implement modules to receive the collected metrics and set this up in
+your config file. The follow example shows how can you do that:
+
+```elixir
+  defmodule MyApp.CustomPhoenixReporter do
+    def report(value, metadata) do
+      # value is the reported metric value.
+      # metadata is a keyword list.
+    end
+
+    def increment(metadata) do
+      # metadata is a keywork list.
+    end
+  end
+```
+In config.exs
+```elixir
+  config :alchemetrics_web, :custom_request_reporter, MyApp.CustomPhoenixReporter
+```
+
+To create a custom reporter for ecto queries just replace :custom_request_reporter config key by :custom_ecto_reporter
