@@ -12,11 +12,11 @@ defmodule AlchemetricsWeb.Collectors.PhoenixRequest do
     |> System.convert_time_unit(:native, :micro_seconds)
   end
 
-  @alchemetrics Application.get_env :alchemetrics_web, :alchemetrics, Alchemetrics 
+  @alchemetrics Application.get_env :alchemetrics, :custom_request_reporter, Alchemetrics 
   defp report(metadata, response_time_fn) do
     metric_metadata = Enum.into(metadata, %{})
-    @alchemetrics.increment request_count: metric_metadata 
-    @alchemetrics.report response_time_fn.(), request_time: metric_metadata 
+    @alchemetrics.increment request_count: metric_metadata
+    @alchemetrics.report response_time_fn.(), response_time: metric_metadata 
   end
 
 end

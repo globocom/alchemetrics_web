@@ -1,16 +1,17 @@
 defmodule AlchemetricsWeb.Collectors.Ecto do
     @metadata_type %{type: "database.ecto"}
-  
+
+    @alchemetrics Application.get_env :alchemetrics, :custom_ecto_reporter, Alchemetrics 
     def collect(ecto_entry) do
       report "query_time", ecto_entry.query_time
       report "queue_time", ecto_entry.queue_time
-      Alchemetrics.increment query_count: @metadata_type
+      @alchemetrics.increment query_count: @metadata_type
     end
   
     defp report(metric_name, value) do
       metadata = metadata_with_name(metric_name)
       to_microseconds(value)
-      |> Alchemetrics.report(metadata)
+      |> @alchemetrics.report(metadata)
     end
 
     defp metadata_with_name(name) do 
