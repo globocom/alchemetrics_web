@@ -20,5 +20,8 @@ defmodule AlchemetricsWeb.Collectors.Ecto do
     end
   
     defp to_microseconds(nil), do: to_microseconds(0)
-    defp to_microseconds(value), do: value |> System.convert_time_unit(:native, :microsecond)
+    defp to_microseconds(value) do 
+      value 
+      |> System.convert_time_unit(:native, :microsecond)
+    end
   end

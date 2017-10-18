@@ -10,6 +10,7 @@ defmodule AlchemetricsWeb.Mixfile do
       app: :alchemetrics_web,
       version: "0.4.0",
       elixir: "~> 1.5",
+      elixirc_paths: elixirc_paths(Mix.env),
       start_permanent: Mix.env == :prod,
       description: @description,
       source_url: @project_url,
@@ -31,11 +32,15 @@ defmodule AlchemetricsWeb.Mixfile do
     ]
   end
 
+  defp elixirc_paths(:test), do: ["lib", "test/support"]
+  defp elixirc_paths(_), do: ["lib"]
+
   defp deps do
     [
       {:plug, "~> 1.0"},
       {:alchemetrics, "~> 0.4"},
-      {:ex_doc, ">= 0.0.0", only: :dev}
+      {:ex_doc, ">= 0.0.0", only: :dev},
+      {:mock, "~> 0.3.1", only: :test}
     ]
   end
 

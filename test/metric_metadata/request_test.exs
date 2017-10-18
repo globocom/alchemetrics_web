@@ -1,4 +1,4 @@
-defmodule AlchemetricsWeb.Test.MetadataBuilders.Request do
+defmodule AlchemetricsWeb.Test.MetricMetadata.Request do
   use ExUnit.Case
   alias AlchemetricsWeb.MetricMetadata.Request
 
