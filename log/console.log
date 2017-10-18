@@ -1,0 +1,72 @@
+2017-09-18 15:37:46.347 [error] <0.166.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.171.0> exit with reason normal in context child_terminated
+2017-09-18 15:37:46.397 [info] <0.33.0> Application lager started on node nonode@nohost
+2017-09-18 15:37:46.425 [info] <0.231.0>@exometer_report:do_start_reporters:613 Starting reporters with []
+2017-09-18 15:37:46.425 [info] <0.33.0> Application exometer_core started on node nonode@nohost
+2017-09-18 15:37:46.429 [info] <0.33.0> Application gen_stage started on node nonode@nohost
+2017-09-18 15:37:46.457 [info] <0.33.0> Application alchemetrics started on node nonode@nohost
+2017-09-18 15:37:46.457 [info] <0.33.0> Application alchemetrics_web started on node nonode@nohost
+2017-09-18 15:37:46.481 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2017-09-18 15:38:47.342 [error] <0.155.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.160.0> exit with reason normal in context child_terminated
+2017-09-18 15:38:47.395 [info] <0.33.0> Application lager started on node nonode@nohost
+2017-09-18 15:38:47.414 [info] <0.220.0>@exometer_report:do_start_reporters:613 Starting reporters with []
+2017-09-18 15:38:47.414 [info] <0.33.0> Application exometer_core started on node nonode@nohost
+2017-09-18 15:38:47.419 [info] <0.33.0> Application gen_stage started on node nonode@nohost
+2017-09-18 15:38:47.445 [info] <0.33.0> Application alchemetrics started on node nonode@nohost
+2017-09-18 15:38:47.446 [info] <0.33.0> Application alchemetrics_web started on node nonode@nohost
+2017-09-18 15:38:47.467 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2017-09-18 15:41:33.859 [error] <0.155.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.160.0> exit with reason normal in context child_terminated
+2017-09-18 15:41:33.909 [info] <0.33.0> Application lager started on node nonode@nohost
+2017-09-18 15:41:33.931 [info] <0.220.0>@exometer_report:do_start_reporters:613 Starting reporters with []
+2017-09-18 15:41:33.931 [info] <0.33.0> Application exometer_core started on node nonode@nohost
+2017-09-18 15:41:33.934 [info] <0.33.0> Application gen_stage started on node nonode@nohost
+2017-09-18 15:41:33.961 [info] <0.33.0> Application alchemetrics started on node nonode@nohost
+2017-09-18 15:41:33.962 [info] <0.33.0> Application alchemetrics_web started on node nonode@nohost
+2017-09-18 15:41:33.983 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2017-09-18 15:47:02.892 [error] <0.155.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.160.0> exit with reason normal in context child_terminated
+2017-09-18 15:47:02.941 [info] <0.33.0> Application lager started on node nonode@nohost
+2017-09-18 15:47:02.963 [info] <0.220.0>@exometer_report:do_start_reporters:613 Starting reporters with []
+2017-09-18 15:47:02.964 [info] <0.33.0> Application exometer_core started on node nonode@nohost
+2017-09-18 15:47:02.967 [info] <0.33.0> Application gen_stage started on node nonode@nohost
+2017-09-18 15:47:02.999 [info] <0.33.0> Application alchemetrics started on node nonode@nohost
+2017-09-18 15:47:03.000 [info] <0.33.0> Application alchemetrics_web started on node nonode@nohost
+2017-09-18 15:47:03.029 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2017-09-18 15:48:40.378 [error] <0.155.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.160.0> exit with reason normal in context child_terminated
+2017-09-18 15:48:40.430 [info] <0.33.0> Application lager started on node nonode@nohost
+2017-09-18 15:48:40.449 [info] <0.220.0>@exometer_report:do_start_reporters:613 Starting reporters with []
+2017-09-18 15:48:40.450 [info] <0.33.0> Application exometer_core started on node nonode@nohost
+2017-09-18 15:48:40.455 [info] <0.33.0> Application gen_stage started on node nonode@nohost
+2017-09-18 15:48:40.490 [info] <0.33.0> Application alchemetrics started on node nonode@nohost
+2017-09-18 15:48:40.490 [info] <0.33.0> Application alchemetrics_web started on node nonode@nohost
+2017-09-18 15:48:40.521 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2017-09-18 15:49:20.840 [error] <0.155.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.160.0> exit with reason normal in context child_terminated
+2017-09-18 15:49:20.894 [info] <0.33.0> Application lager started on node nonode@nohost
+2017-09-18 15:49:20.913 [info] <0.220.0>@exometer_report:do_start_reporters:613 Starting reporters with []
+2017-09-18 15:49:20.913 [info] <0.33.0> Application exometer_core started on node nonode@nohost
+2017-09-18 15:49:20.918 [info] <0.33.0> Application gen_stage started on node nonode@nohost
+2017-09-18 15:49:20.946 [info] <0.33.0> Application alchemetrics started on node nonode@nohost
+2017-09-18 15:49:20.946 [info] <0.33.0> Application alchemetrics_web started on node nonode@nohost
+2017-09-18 15:49:20.968 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2017-09-18 15:50:04.690 [error] <0.155.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.160.0> exit with reason normal in context child_terminated
+2017-09-18 15:50:04.765 [info] <0.33.0> Application lager started on node nonode@nohost
+2017-09-18 15:50:04.814 [info] <0.220.0>@exometer_report:do_start_reporters:613 Starting reporters with []
+2017-09-18 15:50:04.815 [info] <0.33.0> Application exometer_core started on node nonode@nohost
+2017-09-18 15:50:04.822 [info] <0.33.0> Application gen_stage started on node nonode@nohost
+2017-09-18 15:50:04.868 [info] <0.33.0> Application alchemetrics started on node nonode@nohost
+2017-09-18 15:50:04.869 [info] <0.33.0> Application alchemetrics_web started on node nonode@nohost
+2017-09-18 15:50:04.902 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2017-09-18 15:51:16.948 [error] <0.155.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.160.0> exit with reason normal in context child_terminated
+2017-09-18 15:51:17.001 [info] <0.33.0> Application lager started on node nonode@nohost
+2017-09-18 15:51:17.022 [info] <0.220.0>@exometer_report:do_start_reporters:613 Starting reporters with []
+2017-09-18 15:51:17.022 [info] <0.33.0> Application exometer_core started on node nonode@nohost
+2017-09-18 15:51:17.025 [info] <0.33.0> Application gen_stage started on node nonode@nohost
+2017-09-18 15:51:17.058 [info] <0.33.0> Application alchemetrics started on node nonode@nohost
+2017-09-18 15:51:17.059 [info] <0.33.0> Application alchemetrics_web started on node nonode@nohost
+2017-09-18 15:51:17.081 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2017-09-18 15:51:39.162 [error] <0.155.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':start_link({error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}) at <0.160.0> exit with reason normal in context child_terminated
+2017-09-18 15:51:39.207 [info] <0.33.0> Application lager started on node nonode@nohost
+2017-09-18 15:51:39.229 [info] <0.220.0>@exometer_report:do_start_reporters:613 Starting reporters with []
+2017-09-18 15:51:39.229 [info] <0.33.0> Application exometer_core started on node nonode@nohost
+2017-09-18 15:51:39.233 [info] <0.33.0> Application gen_stage started on node nonode@nohost
+2017-09-18 15:51:39.265 [info] <0.33.0> Application alchemetrics started on node nonode@nohost
+2017-09-18 15:51:39.265 [info] <0.33.0> Application alchemetrics_web started on node nonode@nohost
+2017-09-18 15:51:39.294 [info] <0.33.0> Application ex_unit started on node nonode@nohost
