@@ -4,7 +4,8 @@ defmodule AlchemetricsWeb.MetricMetadata.Request do
     [
       type: "controller", 
       controller: format(controller), 
-      action: action
+      action: action,
+      http_status_code: conn.status
     ]
   end
   
