@@ -11,9 +11,8 @@ defmodule AlchemetricsWeb.Test.MetricMetadata.Request do
       }
     }
 
-    [{_, type}, {_, controller}, {_, action}, {_, http_status_code}] = Request.metadata(fake_conn)    
+    [{_, controller}, {_, action}, {_, http_status_code}] = Request.metadata(fake_conn) |> IO.inspect   
     
-    assert type == "controller"
     assert controller == "fake_controller"
     assert action == :fake_action
     assert http_status_code == 200

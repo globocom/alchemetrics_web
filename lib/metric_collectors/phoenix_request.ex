@@ -1,7 +1,8 @@
 defmodule AlchemetricsWeb.Collectors.PhoenixRequest do
   
   def collect(metadata, request_started_at) do
-    report metadata, fn -> 
+    report_request_count(metadata)
+    report_response_time metadata, fn -> 
       request_duration(request_started_at) 
     end
   end
@@ -13,10 +14,20 @@ defmodule AlchemetricsWeb.Collectors.PhoenixRequest do
   end
 
   @alchemetrics Application.get_env :alchemetrics, :custom_request_reporter, Alchemetrics 
-  defp report(metadata, response_time_fn) do
-    metric_metadata = Enum.into(metadata, %{})
-    @alchemetrics.increment request_count: metric_metadata
-    @alchemetrics.report response_time_fn.(), response_time: metric_metadata 
+  defp report_request_count(metric_metadata) do
+    metric_metadata
+    |> metadata(:request_count)
+    |> @alchemetrics.increment
   end
 
+  defp report_response_time(metric_metadata, get_response_time_fn) do
+    get_response_time_fn.()
+    |> @alchemetrics.report(metadata(metric_metadata, :response_time))
+  end
+
+  defp metadata(initial_metadata, type) do
+    initial_metadata
+    |> Keyword.put(:type, type)
+    #|> Enum.into(%{})
+  end
 end

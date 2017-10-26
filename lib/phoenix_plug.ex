@@ -8,7 +8,7 @@ defmodule AlchemetricsWeb.PhoenixPlug do
 
   def call(conn, _opts) do
     request_started_at = System.monotonic_time
-    
+
     register_before_send conn, fn conn ->
       metadata = Request.metadata(conn)
       PhoenixRequest.collect(metadata, request_started_at)
