@@ -17,6 +17,18 @@ defmodule AlchemetricsWeb.Test.MetricMetadata.Request do
     assert action == :fake_action
     assert http_status_code == 200
   end
+
+  test "It must be able to create request metric even if there is no routing information in connection (in order to handle 404)" do
+    fake_conn = %Plug.Conn{
+      status: 404,
+      path_info: ["test", "notfound"]
+    }
+
+    [{_, path_info}, {_, http_status_code}] = Request.metadata(fake_conn)
+
+    assert path_info == "/test/notfound"
+    assert http_status_code == 404
+  end
 end
 
 defmodule AlchemetricsWeb.FakeController do
