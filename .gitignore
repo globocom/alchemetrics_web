@@ -21,3 +21,8 @@ erl_crash.dump
 
 # Generated log folder.
 /log/
+
+# ASDF files
+.elixir_ls/
+.tool-versions
+.tool-versions-e
