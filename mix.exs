@@ -38,7 +38,7 @@ defmodule AlchemetricsWeb.Mixfile do
   defp deps do
     [
       {:plug, "~> 1.0"},
-      {:alchemetrics, "~> 0.4"},
+      {:alchemetrics, "~> 0.5.2"},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:mock, "~> 0.3.1", only: :test}
     ]
