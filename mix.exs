@@ -2,7 +2,7 @@ defmodule AlchemetricsWeb.Mixfile do
   use Mix.Project
 
   @description """
-  Alchemetrics Web is a boilerplate to report basic metrics for a typical web application, such as request count, response time, ecto and erlang metrics. 
+  Alchemetrics Web is a boilerplate to report basic metrics for a typical web application, such as request count, response time, ecto and erlang metrics.
   """
   @project_url "https://github.com/globocom/alchemetrics_web"
   def project do
@@ -38,7 +38,7 @@ defmodule AlchemetricsWeb.Mixfile do
   defp deps do
     [
       {:plug, "~> 1.0"},
-      {:alchemetrics, "~> 0.5.2"},
+      {:alchemetrics, "0.5.1"},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:mock, "~> 0.3.1", only: :test}
     ]
