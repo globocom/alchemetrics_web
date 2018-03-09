@@ -77,7 +77,7 @@ Ecto collector will report the follow data:
 %{datapoint: :total, options: [], query_count: %{type: "database.ecto"}, value: 1}
 %{datapoint: :total, name: "queue_time", options: [], type: "database.ecto", value: 46}
 ```
-####Custom reporter
+#### Custom reporter
 Alchemetrics automatically schedule collected request and query metrics, but its 
 possible to customize the way how the metrics is reported. In order to do that
 you must implement modules to receive the collected metrics and set this up in
