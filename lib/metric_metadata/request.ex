@@ -4,7 +4,7 @@ defmodule AlchemetricsWeb.MetricMetadata.Request do
     metadata = 
       {conn.private[:phoenix_controller], conn.private[:phoenix_action]}
       |> case do
-        {nil, nil} -> [path_info: "/#{Enum.join(conn.path_info, "/")}"]
+        {nil, nil} -> [controller: :__unknown__, action: :__unknown__]
         {controller, action} -> [controller: format(controller), action: action]
       end
     

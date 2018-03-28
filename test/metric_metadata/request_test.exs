@@ -24,10 +24,11 @@ defmodule AlchemetricsWeb.Test.MetricMetadata.Request do
       path_info: ["test", "notfound"]
     }
 
-    [{_, path_info}, {_, http_status_code}] = Request.metadata(fake_conn)
+    metadata = Request.metadata(fake_conn)
 
-    assert path_info == "/test/notfound"
-    assert http_status_code == 404
+    assert metadata[:controller] == :__unknown__
+    assert metadata[:action] == :__unknown__
+    assert metadata[:http_status_code] == 404
   end
 end
 
