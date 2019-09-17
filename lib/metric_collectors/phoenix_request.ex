@@ -1,19 +1,19 @@
 defmodule AlchemetricsWeb.Collectors.PhoenixRequest do
-  
+
   def collect(metadata, request_started_at) do
     report_request_count(metadata)
-    report_response_time metadata, fn -> 
-      request_duration(request_started_at) 
+    report_response_time metadata, fn ->
+      request_duration(request_started_at)
     end
   end
 
   defp request_duration(request_started_at) do
     duration = System.monotonic_time - request_started_at
     duration
-    |> System.convert_time_unit(:native, :micro_seconds)
+    |> System.convert_time_unit(:native, :microsecond)
   end
 
-  @alchemetrics Application.get_env :alchemetrics, :custom_request_reporter, Alchemetrics 
+  @alchemetrics Application.get_env :alchemetrics, :custom_request_reporter, Alchemetrics
   defp report_request_count(metric_metadata) do
     metric_metadata
     |> metadata(:request_count)
