@@ -8,8 +8,8 @@ defmodule AlchemetricsWeb.Test.Collectors.PhoenixRequest do
     @fake_metadata [controller: :fake_controller]
     test_with_alchemetrics "reports responsive time and request count" do
       PhoenixCollector.collect @fake_metadata, System.monotonic_time
-      assert called Alchemetrics.increment(expected_metadata(:request_count))     
-      assert called Alchemetrics.report(:_, expected_metadata(:response_time))     
+      assert called Alchemetrics.increment(expected_metadata(:request_count))
+      assert called Alchemetrics.report(:_, expected_metadata(:response_time))
     end
   end
 

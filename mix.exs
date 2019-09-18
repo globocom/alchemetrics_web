@@ -40,7 +40,7 @@ defmodule AlchemetricsWeb.Mixfile do
       {:plug, "~> 1.0"},
       {:alchemetrics, "0.5.1"},
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:mock, "~> 0.3.1", only: :test}
+      {:mock, "~> 0.3.3", only: :test}
     ]
   end
 
