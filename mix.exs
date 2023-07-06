@@ -18,7 +18,7 @@ defmodule AlchemetricsWeb.Mixfile do
       package: package(),
       name: "Alchemetrics Web",
       docs: [
-        main: "Alchemetrics Web",
+        main: "AlchemetricsWeb",
         source_url: @project_url
       ],
       deps: deps()
